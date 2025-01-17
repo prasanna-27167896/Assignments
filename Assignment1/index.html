@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 7a</title>
+  </head>
+  <body>
+    <script>
+      const employeeName = prompt("Enter Employee Name:");
+      const id = prompt("Enter Employee Employee ID:");
+      const salary = +prompt("Enter Employee Employee Salary:");
+
+      const ta = salary * 0.15;
+      const da = salary * 0.35;
+      const grossSalary = salary + ta + da;
+
+      document.write(`Employee's Gross Salary is: ${grossSalary}`);
+    </script>
+  </body>
+</html>
