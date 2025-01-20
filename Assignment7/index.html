@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nim Game</title>
+  </head>
+  <body>
+    <h2>Nim Game</h2>
+
+    <script>
+      function nimGame() {
+        let stones = +prompt("Enter the number of stones:");
+
+        if (stones % 4 === 0) {
+          document.write("Your friend won the game");
+        } else {
+          document.write("You won the game");
+        }
+      }
+
+      nimGame();
+    </script>
+  </body>
+</html>
