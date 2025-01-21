@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function robotCircle(moves) {
+        let x = 0;
+        let y = 0;
+
+        let i = 0;
+        while (i < moves.length) {
+          let move = moves[i];
+          if (move === "U") {
+            y++;
+          } else if (move === "D") {
+            y--;
+          } else if (move === "L") {
+            x--;
+          } else if (move === "R") {
+            x++;
+          }
+          i++;
+        }
+        return x === 0 && y === 0;
+      }
+
+      document.write(robotCircle("UD") + "<br>");
+      document.write(robotCircle("LL") + "<br>");
+      document.write(robotCircle("LRRL") + "<br>");
+      document.write(robotCircle("LLUD") + "<br>");
+    </script>
+  </body>
+</html>
