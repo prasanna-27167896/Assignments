@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 17</title>
+  </head>
+  <body>
+    <script>
+      let input = prompt("Enter a string:");
+
+      for (let i = 0; i < input.length; i++) {
+        let char = input[i];
+        if (char >= "a" && char <= "z") {
+          document.write(char.toUpperCase());
+        } else if (char >= "A" && char <= "Z") {
+          document.write(char.toLowerCase());
+        } else {
+          document.write(char);
+        }
+      }
+    </script>
+  </body>
+</html>
