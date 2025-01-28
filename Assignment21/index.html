@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = prompt("Enter the string");
+      let position = prompt("Enter Position By Seperated Coma's").split(",");
+
+      let result = "";
+      for (i = 0; i < position.length; i++) {
+        result = result + str[position[i]];
+      }
+      document.write(result);
+    </script>
+  </body>
+</html>
