@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let input = prompt("enter the string:");
+      let words = input.split(" ");
+      let longLength = 0;
+      let longWords = [];
+
+      for (let i = 0; i < words.length; i++) {
+        if (words[i].length > longLength) {
+          longLength = words[i].length;
+        }
+      }
+
+      for (let i = 0; i < words.length; i++) {
+        if (words[i].length === longLength) {
+          longWords.push(words[i]);
+        }
+      }
+
+      document.write(longWords.join(" "));
+    </script>
+  </body>
+</html>
