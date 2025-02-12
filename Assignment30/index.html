@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function customTrim() {
+        let input = prompt("Enter the string:");
+        let trim = prompt("Enter what to remove:");
+
+        if (trim === "space") {
+          input = input.replace(/\s/g, "");
+        } else {
+          let regex = new RegExp(trim, "g");
+          input = input.replace(regex, "");
+        }
+
+        document.write(input);
+      }
+
+      customTrim();
+    </script>
+  </body>
+</html>

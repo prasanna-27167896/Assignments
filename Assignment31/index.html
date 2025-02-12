@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function findDatesInString() {
+        let input = prompt("Enter the string:");
+        let dates = /\d{1,2}[\/\-]\d{1,2}[\/\-]\d{4}/g;
+        let matches = input.match(dates);
+
+        if (matches) {
+          document.write("Dates in the string are: " + matches.join("<br>"));
+        } else {
+          document.write("No dates found.");
+        }
+      }
+
+      findDatesInString();
+    </script>
+  </body>
+</html>
