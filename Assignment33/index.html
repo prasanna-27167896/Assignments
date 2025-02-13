@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function employeeObject() {
+        let empName = prompt("Enter Employee Name:");
+        let empId = prompt("Enter Employee ID:");
+        let empSalary = prompt("Enter Employee Salary:");
+        let deptName = prompt("Enter Department Name:");
+
+        let employee = {
+          EmpName: empName,
+          EmpId: empId,
+          EmpSalary: empSalary,
+          deptName: deptName,
+        };
+
+        document.write("EmpName: " + employee.EmpName + "<br>");
+        document.write("EmpId: " + employee.EmpId + "<br>");
+        document.write("EmpSalary: " + employee.EmpSalary + "<br>");
+        document.write("deptName: " + employee.deptName + "<br><br>");
+
+        delete employee.deptName;
+
+        document.write("After deleting the deptName:<br>");
+        document.write("EmpName: " + employee.EmpName + "<br>");
+        document.write("EmpId: " + employee.EmpId + "<br>");
+        document.write("EmpSalary: " + employee.EmpSalary + "<br><br>");
+
+        let length = Object.keys(employee).length;
+        document.write("Length of the Employee object: " + length + "<br>");
+      }
+
+      employeeObject();
+    </script>
+  </body>
+</html>
