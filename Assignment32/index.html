@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function findFactors() {
+        let number = +prompt("enter the number:");
+
+        let result = [];
+        for (let i = 1; i <= number; i++) {
+          if (number % i === 0) {
+            result.push(i);
+            result.join(",");
+          }
+        }
+        document.write(`factors of ${number} are: ${result}`);
+      }
+
+      findFactors();
+    </script>
+  </body>
+</html>
