@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let width = +prompt("enter the width:");
+      let height = +prompt("enter the height:");
+
+      let rectangle = {
+        width: width,
+        height: height,
+
+        area: function () {
+          return this.width * this.height;
+        },
+
+        perimeter: function () {
+          return 2 * (this.width + this.height);
+        },
+      };
+      document.write("Area: " + rectangle.area() + "<br>");
+      document.write("Perimeter: " + rectangle.perimeter() + "<br>");
+    </script>
+  </body>
+</html>
