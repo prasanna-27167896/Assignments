@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea at
+      reprehenderit id explicabo nisi ipsam deleniti, libero soluta labore vero
+      provident nobis, earum unde cupiditate sequi. Voluptas distinctio odio,
+      nesciunt soluta quidem illum quas accusamus perferendis ab omnis, sit,
+      veniam quis dolores ratione. Iusto ea neque velit, mollitia eaque
+      similique.
+    </p>
+    <button onclick="changeFont()">Change Font</button>
+    <button onclick="addBorder()">Add Border</button>
+    <script>
+      function changeFont() {
+        let para = document.getElementById("para");
+        para.style.fontFamily = "cursive";
+        para.style.fontWeight = "bold";
+        para.style.color = "blue";
+      }
+
+      function addBorder() {
+        let para = document.getElementById("para");
+        para.style.border = "5px dashed";
+      }
+    </script>
+  </body>
+</html>

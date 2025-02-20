@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = +prompt("Enter value side 1:");
+      let b = +prompt("Enter value side 2:");
+      let c = +prompt("Enter value side 3:");
+
+      let s = (a + b + c) / 2;
+      let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+
+      document.write(`<h3>The Area of Triangle</h3>`);
+
+      document.write(`<p>Area of the triangle = ${area}</p>`);
+    </script>
+  </body>
+</html>
