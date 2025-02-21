@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+      exercitationem velit veniam esse error debitis, totam ratione assumenda
+      dolores adipisci aut perferendis maxime atque corporis natus modi quos
+      eligendi. Cum ullam deserunt sit aspernatur repellendus deleniti explicabo
+      quos earum ab doloremque? Placeat est et veritatis laboriosam
+      reprehenderit veniam illo alias.
+    </p>
+
+    <button onclick="changeFont()">Change Font</button>
+    <button onclick="changeFontSize()">Change Size</button>
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+      function changeFont() {
+        let para = document.getElementById("para");
+        para.style.fontFamily = "cursive";
+      }
+      function changeFontSize() {
+        let para = document.getElementById("para");
+        para.style.fontSize = "22px";
+      }
+      function changeColor() {
+        let para = document.getElementById("para");
+        para.style.color = "red";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      id="image"
+      src="https://images.pexels.com/photos/30142098/pexels-photo-30142098/free-photo-of-cozy-cafe-latte-with-frothy-milk-art.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      alt="oringinal image"
+      width="300px"
+      height="300px"
+    />
+
+    <p>Move your mouse pointer in and out of this image</p>
+
+    <script>
+      let image = document.getElementById("image");
+
+      image.onmouseover = function () {
+        image.src =
+          "https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+        image.style.height = "500px";
+      };
+
+      image.onmouseout = function () {
+        image.src =
+          "https://images.pexels.com/photos/30142098/pexels-photo-30142098/free-photo-of-cozy-cafe-latte-with-frothy-milk-art.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+        image.style.height = "300px";
+      };
+    </script>
+  </body>
+</html>
