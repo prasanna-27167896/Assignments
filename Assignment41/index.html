@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Link Attributes</title>
+  </head>
+  <body>
+    <a
+      id="link"
+      href="https://www.google.com"
+      hreflang="en-us"
+      rel="nofollow"
+      target="_self"
+      type="text/html"
+    >
+    </a>
+
+    <button onclick="getAttributes()">Click to get Attributes</button>
+
+    <p id="output"></p>
+
+    <script>
+      function getAttributes() {
+        let link = document.getElementById("link");
+
+        let href = link.href;
+        let hreflang = link.hreflang;
+        let rel = link.rel;
+        let target = link.target;
+        let type = link.type;
+
+        document.getElementById("output").innerHTML = `
+            The value of the href attribute of the link is:href: ${href}<br>
+            The value of the hreflang attribute of the link is: hreflang: ${hreflang}<br>
+            The value of the rel attribute of the link is: rel: ${rel}<br>
+            The value of the target attribute of the link is: target: ${target}<br>
+            The value of the type attribute of the link is: type: ${type}
+            `;
+      }
+    </script>
+  </body>
+</html>
