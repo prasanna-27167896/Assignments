@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown List Operations</title>
+  </head>
+  <body>
+    <label for="stateList">select a state:</label>
+    <select id="stateList">
+      <option>Karnataka</option>
+      <option>Kerala</option>
+      <option>Tamilnadu</option>
+      <option>Telangana</option>
+      <option>UP</option>
+    </select>
+    <br />
+    <br />
+    <button onclick="output()">Select</button>
+
+    <script>
+      function output() {
+        const dropdown = document.getElementById("stateList");
+
+        document.write(
+          `Number of items in list: ${dropdown.options.length}<br>`
+        );
+
+        const selectedIndex = dropdown.selectedIndex;
+        if (selectedIndex !== -1) {
+          dropdown.remove(selectedIndex);
+        }
+
+        document.write("Dropdown List:");
+        for (let i = 0; i < dropdown.options.length; i++) {
+          document.write(dropdown.options[i].text + "<br>");
+        }
+      }
+    </script>
+  </body>
+</html>

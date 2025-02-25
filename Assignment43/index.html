@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis provident
+      aliquid repellat velit odio ab! Autem vitae, adipisci enim architecto vero
+      saepe recusandae? Adipisci illum similique officia repellendus. Deserunt
+      numquam, quas quibusdam sapiente tempore autem consectetur sed alias
+      ratione quam?
+    </p>
+    <p id="para2">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum harum
+      sed aspernatur vel consectetur, cupiditate a voluptas? Fugit suscipit
+      perferendis voluptatibus aliquid, numquam unde asperiores velit neque qui
+      iusto debitis.
+    </p>
+    <p id="para3">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
+      dolorum?
+    </p>
+
+    <button onclick="left()">Left</button>
+    <button onclick="center()">Center</button>
+    <button onclick="right()">Right</button>
+
+    <script>
+      function left() {
+        let paragraphs = document.getElementsByTagName("p");
+        for (let i = 0; i < paragraphs.length; i++) {
+          paragraphs[i].style.textAlign = "left";
+        }
+      }
+
+      function center() {
+        let paragraphs = document.getElementsByTagName("p");
+        for (let i = 0; i < paragraphs.length; i++) {
+          paragraphs[i].style.textAlign = "center";
+        }
+      }
+
+      function right() {
+        let paragraphs = document.getElementsByTagName("p");
+        for (let i = 0; i < paragraphs.length; i++) {
+          paragraphs[i].style.textAlign = "right";
+        }
+      }
+    </script>
+  </body>
+</html>
