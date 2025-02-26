@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple DOM Manipulation</title>
+  </head>
+  <body>
+    <button onclick="createPara()">Create Para</button>
+    <button onclick="createNav()">Create Nav</button>
+    <button onclick="createStrong()">Create Strong Text</button>
+
+    <script>
+      function createPara() {
+        let para = document.createElement("p");
+        para.textContent = "This is a paragraph.";
+        document.body.appendChild(para);
+      }
+
+      function createNav() {
+        let nav = document.createElement("nav");
+
+        let link1 = document.createElement("a");
+        link1.textContent = "Google";
+        link1.href = "https://www.google.com";
+        nav.appendChild(link1);
+
+        let br = document.createElement("br");
+        nav.appendChild(br);
+
+        let link2 = document.createElement("a");
+        link2.textContent = "Yahoo";
+        link2.href = "https://www.yahoo.com";
+        nav.appendChild(link2);
+
+        document.body.appendChild(nav);
+      }
+
+      function createStrong() {
+        let strong = document.createElement("strong");
+        strong.textContent = "Paragraph with strong";
+        document.body.appendChild(strong);
+      }
+    </script>
+  </body>
+</html>
