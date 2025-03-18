@@ -5,3 +5,4 @@ console.log(getASCII("A"));
 console.log(getASCII("a"));
 console.log(getASCII("1"));
 console.log(getASCII("#"));
+console.log(getASCII("f"));

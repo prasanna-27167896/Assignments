@@ -5,7 +5,7 @@ function countCharacters(str) {
     if (chars[char]) {
       chars[char] += 1; // Increment count if character already exists
     } else {
-      chars[char] = 1; // Initialize count if character appears for the first time
+      chars[char] = 1;
     }
   });
 
