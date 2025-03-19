@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const Doctor = function (DocName, DocExperience) {
+        this.DocName = DocName;
+        this.DocExperience = DocExperience;
+      };
+
+      Doctor.prototype.addPatientName = function (PatientName) {
+        this.PatientName = PatientName;
+      };
+      const Nurse = function (NurseName, NurseExperience) {
+        this.NurseName = NurseName;
+        this.NurseExperience = NurseExperience;
+      };
+      Nurse.prototype = new Doctor();
+      const doctor = new Doctor("Dr.John", "22yrs");
+      const nurse = new Nurse("Marry", "6yrs");
+      doctor.addPatientName("William");
+      nurse.addPatientName("William");
+      console.log(doctor.DocName);
+      console.log(doctor.DocExperience);
+      console.log(doctor.PatientName);
+
+      console.log(nurse.NurseName);
+      console.log(nurse.NurseExperience);
+      console.log(nurse.PatientName);
+    </script>
+  </body>
+</html>

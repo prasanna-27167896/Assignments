@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const Person = function (firstName, age, phoneNumber) {
+        this.firstName = firstName;
+        this.age = age;
+        this.phoneNumber = phoneNumber;
+      };
+
+      Person.prototype.addLastName = function (lastName) {
+        this.lastName = lastName;
+      };
+
+      const person1 = new Person("Rohan", 24, 9123456789);
+      person1.addLastName("A H");
+      console.log(person1.firstName);
+      console.log(person1.lastName);
+      console.log(person1.age);
+      console.log(person1.phoneNumber);
+    </script>
+  </body>
+</html>
